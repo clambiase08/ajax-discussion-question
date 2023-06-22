@@ -27,8 +27,7 @@ const phone = document.querySelector("#phone")
 const cell = document.querySelector("#cell")
 const dateBirth = document.querySelector("#date_of_birth")
 const button = document.querySelector(".btn.btn-primary")
-
-console.log(button)
+const image = document.querySelector("#profile_picture")
 
 
 // Fetch function
@@ -51,6 +50,7 @@ function renderUser(data) {
   phone.textContent = user.phone
   cell.textContent = user.cell
   dateBirth.textContent = user.dob.date
+  image.src = user.picture.large
 
 }
 
